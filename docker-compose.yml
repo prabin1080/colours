@@ -20,3 +20,7 @@ services:
       - POSTGRES_PASSWORD=postgres
     depends_on:
       - db
+    develop:
+      watch:
+        - action: rebuild
+          path: .
